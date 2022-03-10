@@ -6,4 +6,4 @@ jobs:
  job1:
   runs-on: windows-latest 
   steps:
-    - run: Get-disk
+    - run: pwsh -File generate_name.ps1
