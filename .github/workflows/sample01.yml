@@ -8,12 +8,12 @@ jobs:
   steps:
     - uses: actions/checkout@v3.0.0
     - run: pwsh -File generate_name.ps1
-             
-job2:
- needs: 
-        -job1
- runs-on: windows-latest 
- steps:
-  - run: get-process
+
+ job2:
+   needs: 
+         job1
+   runs-on: windows-latest 
+   steps:
+      - run: get-process
         
 
